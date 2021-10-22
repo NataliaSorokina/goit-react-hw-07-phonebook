@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import contactsActions from 'redux/contacts-actions';
+import { addContact } from 'redux/contacts-operations';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { getItems } from '../../redux/contacts-selectors/ContactForm-selectors';
@@ -36,7 +36,7 @@ export default function SubmitForm() {
       reset();
       return;
     } else {
-      dispatch(contactsActions.addContact(name, number));
+      dispatch(addContact(name, number));
       reset();
     }
   };

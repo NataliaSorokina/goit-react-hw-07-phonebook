@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    {
+      "name": "Toph Beifong",
+      "number": "1236386-6867",
+      "id": 1
+    },
+    {
+      "name": "Suki Kyoshi",
+      "number": "1236386-6867",
+      "id": 2
+    },
+    {
+      "name": "Zuko Roku",
+      "number": "459-12-56",
+      "id": 3
+    },
+    {
+      "name": "Sokka Planguy",
+      "number": "459-12-56",
+      "id": 4
+    },
+    {
+      "name": "Aang Gyatzo",
+      "number": "459-12-56",
+      "id": 5
+    },
+    {
+      "name": "Druk Fang",
+      "number": "459-12-56",
+      "id": 6
+    },
+    {
+      "name": "Iroh Ilah",
+      "number": "459-12-56",
+      "id": 7
+    }
+  ]
+}
