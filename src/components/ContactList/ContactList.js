@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { fetchContact, deleteContact } from 'redux/contacts-operations';
+import { fetchContacts, deleteContact } from 'redux/contacts-operations';
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getFilteredContacts } from '../../redux/contacts-selectors/ContactList-Filter-selectors';
+import { getFilteredContacts } from 'redux/contacts-selectors/ContactList-Filter-selectors';
 import { List, ListItem } from 'components/ContactList/ContactList.styled';
 import { Button } from 'components/Button/Button.styled';
 
@@ -11,7 +11,7 @@ const ContactList = () => {
   const dispatch = useDispatch();
   const onDeleteContact = id => dispatch(deleteContact(id));
 
-  useEffect(() => dispatch(fetchContact()), [dispatch]);
+  useEffect(() => dispatch(fetchContacts()), [dispatch]);
 
   return (
     <List>

@@ -9,7 +9,7 @@ import Loader from 'components/Loader/Loader';
 import {
   getLoading,
   gotError,
-} from './redux/contacts-selectors/ContactList-Filter-selectors';
+} from 'redux/contacts-selectors/ContactList-Filter-selectors';
 
 export default function CreateApp() {
   const isLoading = useSelector(getLoading);
@@ -22,7 +22,7 @@ export default function CreateApp() {
         <Filter />
         {hasError &&
           toast.error(
-            `We are sorry, but something went wrong. ${hasError}. Please, try again later.`,
+            `We are sorry, but something went wrong. Please, try again later.`,
           )}
         <ContactList />
       </Section>
